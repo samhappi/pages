@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>More Happi — Job Move Tracker</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap');
+:root{--cream:#f7efe6;--charcoal:#474645;--pink:#ff9394;--orange:#f34100;--green:#00592b;--yellow:#f5c900;--blue:#6d94b4;
+--h:"Futura PT","Jost",Futura,Arial,sans-serif;--b:"Inter","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--charcoal);font-family:var(--b);line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 72px}
+header.top{background:var(--charcoal);color:var(--cream);padding:44px 0 38px;margin-bottom:36px}
+header.top .wrap{padding-bottom:0}
+h1{font-family:var(--h);font-size:2.5rem;margin:0 0 6px;color:var(--cream);letter-spacing:-.5px}
+header.top p{margin:0;opacity:.82;font-size:1.02rem}
+h2{font-family:var(--h);font-size:1.6rem;margin:52px 0 6px}
+h2:first-of-type{margin-top:8px}
+.sub{margin:0 0 22px;opacity:.72;font-size:.95rem;max-width:70ch}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px;margin:26px 0 0}
+.stat{background:#fff;border-radius:12px;padding:20px;border-left:5px solid var(--blue)}
+.stat:nth-child(1){border-left-color:var(--pink)}
+.stat:nth-child(2){border-left-color:var(--orange)}
+.stat:nth-child(3){border-left-color:var(--green)}
+.stat:nth-child(4){border-left-color:var(--yellow)}
+.stat b{font-family:var(--h);font-size:2.15rem;display:block;line-height:1.1}
+.stat span{font-size:.83rem;opacity:.7;display:block;margin-top:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.card{background:#fff;border-radius:12px;padding:18px 20px;border-top:5px solid var(--yellow)}
+.card.high{border-top-color:var(--orange)}
+.card header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.pill{font-size:.68rem;font-weight:700;letter-spacing:.09em;padding:3px 9px;border-radius:20px;background:var(--yellow);color:var(--charcoal)}
+.pill.high{background:var(--orange);color:#fff}
+.card time{font-size:.78rem;opacity:.6}
+.card h3{font-family:var(--h);font-size:1.16rem;margin:0 0 4px}
+.role{font-family:var(--b);font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;opacity:.55;font-weight:600}
+.move{margin:2px 0 2px;font-size:.95rem}
+.titles{margin:0 0 12px;font-size:.83rem;opacity:.7}
+.arr{color:var(--orange);font-weight:700;padding:0 3px}
+.card dl{margin:0;font-size:.83rem;border-top:1px solid #ece3d8;padding-top:10px}
+.card dl div{display:flex;gap:10px;padding:3px 0}
+.card dt{opacity:.55;min-width:104px;flex-shrink:0}
+.card dd{margin:0}
+.why{margin:11px 0 0;font-size:.79rem;font-style:italic;opacity:.62}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;font-size:.87rem}
+th{background:var(--charcoal);color:var(--cream);text-align:left;padding:11px 13px;font-family:var(--h);font-weight:600;font-size:.82rem}
+td{padding:10px 13px;border-top:1px solid #f0e8dd;vertical-align:top}
+td.num{text-align:right}
+tbody tr:hover{background:#fdf9f4}
+.note{background:#fff;border-left:5px solid var(--blue);border-radius:10px;padding:18px 22px;margin-top:44px;font-size:.87rem}
+.note h3{font-family:var(--h);margin:0 0 8px;font-size:1.05rem}
+.note li{margin-bottom:5px}
+.conf{font-size:.72rem;font-weight:700;letter-spacing:.05em;padding:1px 6px;border-radius:4px;background:var(--green);color:#fff}
+.conf.med{background:var(--blue)}
+footer{text-align:center;padding:34px 0 0;font-size:.79rem;opacity:.55}
+</style></head><body>
+<header class="top"><div class="wrap">
+<h1>Job Move Tracker</h1>
+<p>Platform users who changed employer · 15 May – 13 August 2026 · generated 13 August 2026</p>
+</div></header>
+<div class="wrap">
+
+<div class="stats">
+<div class="stat"><b>447</b><span>platform users changed employer</span></div>
+<div class="stat"><b>31</b><span>sponsors &amp; admins moved</span></div>
+<div class="stat"><b>11</b><span>left a live customer account</span></div>
+<div class="stat"><b>4</b><span>landed in an ICP-fit role</span></div>
+</div>
+
+<h2>Stream A · Sponsor departures from live customers</h2>
+<p class="sub">Every one of these needs an account owner identified. Cards marked HIGH have either no people-side sponsor left, or a large user base now unmanaged. <span class="conf">HIGH</span> retrieved from HubSpot and Apollo directly.</p>
+<div class="grid"><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-08-12</time></header>
+  <h3>Lisa Rodwell <span class="role">admin</span></h3>
+  <p class="move"><strong>Daye</strong> <span class="arr">&rarr;</span> <strong>Numan</strong></p>
+  <p class="titles">Founder or CEO <span class="arr">&rarr;</span> Health &amp; Wellness Tech</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 3 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£1,287 (8 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Sara Bozhkova (Head of Talent &amp; Recruitment)</dd></div>
+    <div><dt>New company</dt><dd>520 ee · United Kingdom · Tier 1 (Enterprise)</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-08-11</time></header>
+  <h3>Helen Gribble <span class="role">sponsor</span></h3>
+  <p class="move"><strong>onefinestay</strong> <span class="arr">&rarr;</span> <strong>NED</strong></p>
+  <p class="titles">Chief People Officer <span class="arr">&rarr;</span> Chief People Officer</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 8 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£1,195 (4 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Fernanda Munera (Senior People Advisor); Sharon Barton (Chief People Officer)</dd></div>
+    <div><dt>New company</dt><dd>18 ee · Israel · Below ICP (&lt;20)</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-08-07</time></header>
+  <h3>Claire Cathcart <span class="role">sponsor</span></h3>
+  <p class="move"><strong>YuLife</strong> <span class="arr">&rarr;</span> <strong>ELEVATE Hub</strong></p>
+  <p class="titles">People Partner <span class="arr">&rarr;</span> HR Director</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 15 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£5,476 (9 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Esme Muduroglu (Talent &amp; People Ops Manager)</dd></div>
+    <div><dt>New company</dt><dd>17 ee · United Kingdom · Below ICP (&lt;20)</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card high">
+  <header><span class="pill high">HIGH</span><time>2026-08-06</time></header>
+  <h3>Ellie Nash <span class="role">admin</span></h3>
+  <p class="move"><strong>Lucid Group</strong> <span class="arr">&rarr;</span> <strong>Nash of Norfolk</strong></p>
+  <p class="titles">Learning and Development Specialist <span class="arr">&rarr;</span> Founder &amp; Private Property and Lifestyle Manager</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 119 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£3,679 (3 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Henry Litchfield (Head of Talent and Learning)</dd></div>
+    <div><dt>New company</dt><dd>1 ee · United Kingdom · Below ICP (&lt;20)</dd></div>
+  </dl>
+  <p class="why">Large user base, sponsor gone</p>
+</article><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-07-26</time></header>
+  <h3>Ali Ilyin <span class="role">admin</span></h3>
+  <p class="move"><strong>YuLife</strong> <span class="arr">&rarr;</span> <strong>Bulletproof</strong></p>
+  <p class="titles">People Operations Manager <span class="arr">&rarr;</span> Global People (HR) Operations Manager</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 15 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£5,476 (9 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Esme Muduroglu (Talent &amp; People Ops Manager)</dd></div>
+    <div><dt>New company</dt><dd>380 ee · United Kingdom · Tier 1 (Enterprise)</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card high">
+  <header><span class="pill high">HIGH</span><time>2026-07-11</time></header>
+  <h3>Georgia Marshall <span class="role">admin</span></h3>
+  <p class="move"><strong>Sonder &amp; Tell</strong> <span class="arr">&rarr;</span> <strong>The Times</strong></p>
+  <p class="titles">Project Manager <span class="arr">&rarr;</span> Project Manager</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer</dd></div>
+    <div><dt>Lifetime value</dt><dd>£24 (1 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>None — orphaned</dd></div>
+    <div><dt>New company</dt><dd>1700 ee · United Kingdom · Above ICP (&gt;1,500)</dd></div>
+  </dl>
+  <p class="why">No people-side sponsor or admin left on the account</p>
+</article><article class="card high">
+  <header><span class="pill high">HIGH</span><time>2026-07-04</time></header>
+  <h3>CJ Holden <span class="role">admin</span></h3>
+  <p class="move"><strong>This is Beyond Ltd</strong> <span class="arr">&rarr;</span> <strong>Thinkerbell</strong></p>
+  <p class="titles">Chief Marketing Officer <span class="arr">&rarr;</span> Acting COO: Culture, Operations, &amp; People</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 36 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£3,719 (3 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Shazia Bacchus (Director of People &amp; Culture)</dd></div>
+    <div><dt>New company</dt><dd>180 ee · Australia · Tier 2 (Scale-up) - non-EU</dd></div>
+  </dl>
+  <p class="why">Large user base, sponsor gone</p>
+</article><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-06-10</time></header>
+  <h3>Cali Gold <span class="role">admin</span></h3>
+  <p class="move"><strong>YuLife</strong> <span class="arr">&rarr;</span> <strong>ORT UK</strong></p>
+  <p class="titles">Head of People <span class="arr">&rarr;</span> Trustee</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 15 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£5,476 (9 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Esme Muduroglu (Talent &amp; People Ops Manager)</dd></div>
+    <div><dt>New company</dt><dd>28 ee · United Kingdom · Tier 3 (Startup)</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-06-07</time></header>
+  <h3>Henrik Hagemann <span class="role">sponsor</span></h3>
+  <p class="move"><strong>Puraffinity</strong> <span class="arr">&rarr;</span> <strong>Stealth Startup</strong></p>
+  <p class="titles">Pledger <span class="arr">&rarr;</span> Co-Founder</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 15 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£3,243 (9 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Sally Kennard (Head of People and Talent)</dd></div>
+    <div><dt>New company</dt><dd>— ee · — · Unknown</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card medium">
+  <header><span class="pill medium">MEDIUM</span><time>2026-05-23</time></header>
+  <h3>Sarah-Emily Oades <span class="role">admin</span></h3>
+  <p class="move"><strong>SEON</strong> <span class="arr">&rarr;</span> <strong>Eucalyptus</strong></p>
+  <p class="titles">Chief People Officer &amp; SVP Operations <span class="arr">&rarr;</span> VP People &amp; Talent</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer</dd></div>
+    <div><dt>Lifetime value</dt><dd>£2,022 (4 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>Annamaria Stemmet (People or Culture)</dd></div>
+    <div><dt>New company</dt><dd>900 ee · Australia · Tier 1 (Enterprise) - non-EU</dd></div>
+  </dl>
+  <p class="why">Handover candidate identified</p>
+</article><article class="card high">
+  <header><span class="pill high">HIGH</span><time>2026-05-15</time></header>
+  <h3>Sasha Watson <span class="role">admin</span></h3>
+  <p class="move"><strong>Beam</strong> <span class="arr">&rarr;</span> <strong>Zellis</strong></p>
+  <p class="titles">Chief People &amp; Culture Officer <span class="arr">&rarr;</span> Chief People Officer</p>
+  <dl>
+    <div><dt>Account</dt><dd>Customer · 4 platform users</dd></div>
+    <div><dt>Lifetime value</dt><dd>£636 (4 contracts)</dd></div>
+    <div><dt>Handover</dt><dd>None — orphaned</dd></div>
+    <div><dt>New company</dt><dd>2500 ee · United Kingdom · Above ICP (&gt;1,500)</dd></div>
+  </dl>
+  <p class="why">No people-side sponsor or admin left on the account</p>
+</article></div>
+
+<h2>Sequence-ready · moved into an ICP-fit role</h2>
+<p class="sub">Tier 1 or Tier 2 by headcount, European, and now in a people or L&amp;D title. These are warm — they already know the product. <span class="conf med">MEDIUM</span> ICP tier is my calculation from Apollo headcount against your Notion criteria.</p>
+<table><thead><tr><th>Detected</th><th>Name</th><th>Left</th><th>Joined</th><th>New title</th><th>Headcount</th><th>ICP tier</th><th>Old account</th></tr></thead>
+<tbody><tr><td>2026-07-26</td><td><strong>Ali Ilyin</strong></td>
+<td>YuLife</td><td>Bulletproof</td><td>Global People (HR) Operations Manager</td>
+<td class="num">380</td><td>Tier 1 (Enterprise)</td>
+<td>Customer</td></tr><tr><td>2026-07-20</td><td><strong>Ashleah Robinson</strong></td>
+<td>IMA</td><td>Open Partners</td><td>People &amp; Culture Associate Partner</td>
+<td class="num">160</td><td>Tier 2 (Scale-up)</td>
+<td>not in HubSpot</td></tr><tr><td>2026-07-12</td><td><strong>Lucy Gleed</strong></td>
+<td>Selina Finance | Certified B Corp™</td><td>Uncovered</td><td>People Operations Coordinator</td>
+<td class="num">110</td><td>Tier 2 (Scale-up)</td>
+<td>MQL (open deal)</td></tr><tr><td>2026-05-30</td><td><strong>Alice Dobie</strong></td>
+<td>HelloFresh (The Beehive)</td><td>CreateFuture</td><td>Senior Learning &amp; Development Partner</td>
+<td class="num">500</td><td>Tier 1 (Enterprise)</td>
+<td>Leaver</td></tr></tbody></table>
+
+<h2>All 31 sponsor &amp; admin moves</h2>
+<p class="sub">The full Stream A set, including moves out of ICP range and into companies too small to sell to.</p>
+<table><thead><tr><th>Detected</th><th>Name</th><th>Left</th><th>Joined</th><th>New title</th><th>Headcount</th><th>ICP tier</th><th>Old account</th></tr></thead>
+<tbody><tr><td>2026-08-13</td><td><strong>Tiffany Anderjaska</strong></td>
+<td>Shiftmove</td><td>Stealth</td><td>Founder</td>
+<td class="num">6100</td><td>Above ICP (&gt;1,500)</td>
+<td>Lead</td></tr><tr><td>2026-08-12</td><td><strong>Lisa Rodwell</strong></td>
+<td>Daye</td><td>Numan</td><td>Health &amp; Wellness Tech</td>
+<td class="num">520</td><td>Tier 1 (Enterprise)</td>
+<td>Customer</td></tr><tr><td>2026-08-11</td><td><strong>Helen Gribble</strong></td>
+<td>onefinestay</td><td>NED</td><td>Chief People Officer</td>
+<td class="num">18</td><td>Below ICP (&lt;20)</td>
+<td>Customer</td></tr><tr><td>2026-08-08</td><td><strong>Molly Cooper</strong></td>
+<td>Kleene.ai</td><td>Curated</td><td>Founder</td>
+<td class="num">230</td><td>Tier 2 (Scale-up) - non-EU</td>
+<td>Opportunity (open deal)</td></tr><tr><td>2026-08-08</td><td><strong>Tim Withers</strong></td>
+<td>AUSVEG</td><td>International Fresh Produce Association Australia New Zealand</td><td>Head of Membership Experience (ANZ)</td>
+<td class="num">—</td><td>Unknown</td>
+<td>Lead</td></tr><tr><td>2026-08-07</td><td><strong>Claire Cathcart</strong></td>
+<td>YuLife</td><td>ELEVATE Hub</td><td>HR Director</td>
+<td class="num">17</td><td>Below ICP (&lt;20)</td>
+<td>Customer</td></tr><tr><td>2026-08-06</td><td><strong>Ellie Nash</strong></td>
+<td>Lucid Group</td><td>Nash of Norfolk</td><td>Founder &amp; Private Property and Lifestyle Manager</td>
+<td class="num">1</td><td>Below ICP (&lt;20)</td>
+<td>Customer</td></tr><tr><td>2026-08-02</td><td><strong>Harriet Harriet</strong></td>
+<td>Rise at Seven</td><td>Campfire</td><td>HR Manager</td>
+<td class="num">59</td><td>Tier 3 (Startup)</td>
+<td>Leaver</td></tr><tr><td>2026-08-01</td><td><strong>Sophie Levens Levens</strong></td>
+<td>Library of Things</td><td>National Trust</td><td>Gardener</td>
+<td class="num">15000</td><td>Above ICP (&gt;1,500)</td>
+<td>Lead</td></tr><tr><td>2026-07-31</td><td><strong>Fran Newman</strong></td>
+<td>Minor Figures</td><td>Hero</td><td>People Director Hero UK&amp;I</td>
+<td class="num">4000</td><td>Above ICP (&gt;1,500)</td>
+<td>Leaver</td></tr><tr><td>2026-07-31</td><td><strong>Roxy Allen</strong></td>
+<td>Team17</td><td>Northern Gas Networks</td><td>Talent &amp; Workforce Development Manager</td>
+<td class="num">1600</td><td>Above ICP (&gt;1,500)</td>
+<td>MQL</td></tr><tr><td>2026-07-31</td><td><strong>Ollie Collard</strong></td>
+<td>Enterprise Orchard</td><td>Founded &amp; Grounded</td><td>Co-Founder</td>
+<td class="num">2</td><td>Below ICP (&lt;20)</td>
+<td>Leaver</td></tr><tr><td>2026-07-26</td><td><strong>Ali Ilyin</strong></td>
+<td>YuLife</td><td>Bulletproof</td><td>Global People (HR) Operations Manager</td>
+<td class="num">380</td><td>Tier 1 (Enterprise)</td>
+<td>Customer</td></tr><tr><td>2026-07-20</td><td><strong>Ashleah Robinson</strong></td>
+<td>IMA</td><td>Open Partners</td><td>People &amp; Culture Associate Partner</td>
+<td class="num">160</td><td>Tier 2 (Scale-up)</td>
+<td>not in HubSpot</td></tr><tr><td>2026-07-13</td><td><strong>Sam Schultz</strong></td>
+<td>Localyze</td><td>Plic (Re)Made</td><td>Founder</td>
+<td class="num">—</td><td>Unknown</td>
+<td>not in HubSpot</td></tr><tr><td>2026-07-12</td><td><strong>Heena Rabadiya</strong></td>
+<td>Platypus Digital | B Corp</td><td>Collective Content</td><td>Operations and Finance Manager</td>
+<td class="num">11</td><td>Below ICP (&lt;20)</td>
+<td>Trial Customer Lost</td></tr><tr><td>2026-07-12</td><td><strong>Lucy Gleed</strong></td>
+<td>Selina Finance | Certified B Corp™</td><td>Uncovered</td><td>People Operations Coordinator</td>
+<td class="num">110</td><td>Tier 2 (Scale-up)</td>
+<td>MQL (open deal)</td></tr><tr><td>2026-07-11</td><td><strong>Georgia Marshall</strong></td>
+<td>Sonder &amp; Tell</td><td>The Times</td><td>Project Manager</td>
+<td class="num">1700</td><td>Above ICP (&gt;1,500)</td>
+<td>Customer</td></tr><tr><td>2026-07-10</td><td><strong>Katie Beales</strong></td>
+<td>Perlego</td><td>Paloma Health</td><td>People &amp; Talent Director</td>
+<td class="num">89</td><td>Tier 3 (Startup)</td>
+<td>Leaver</td></tr><tr><td>2026-07-05</td><td><strong>Olivia Smith</strong></td>
+<td>Digitaloft</td><td>Northbound PR</td><td>Founder</td>
+<td class="num">1</td><td>Below ICP (&lt;20)</td>
+<td>Leaver</td></tr><tr><td>2026-07-04</td><td><strong>CJ Holden</strong></td>
+<td>This is Beyond Ltd</td><td>Thinkerbell</td><td>Acting COO: Culture, Operations, &amp; People</td>
+<td class="num">180</td><td>Tier 2 (Scale-up) - non-EU</td>
+<td>Customer</td></tr><tr><td>2026-06-13</td><td><strong>Fergus Crow</strong></td>
+<td>Winston&#x27;s Wish</td><td>Child Bereavement UK</td><td>CEO</td>
+<td class="num">120</td><td>Tier 2 (Scale-up)</td>
+<td>Leaver</td></tr><tr><td>2026-06-10</td><td><strong>Cali Gold</strong></td>
+<td>YuLife</td><td>ORT UK</td><td>Trustee</td>
+<td class="num">28</td><td>Tier 3 (Startup)</td>
+<td>Customer</td></tr><tr><td>2026-06-09</td><td><strong>Andrea Himmelbauer</strong></td>
+<td>Mettle</td><td>Andy H</td><td>Founder &amp; Organisational Culture Consultant</td>
+<td class="num">—</td><td>Unknown</td>
+<td>Leaver</td></tr><tr><td>2026-06-07</td><td><strong>Ashley Blake</strong></td>
+<td>Walkin&#x27;​ Pets</td><td>Lactalis U.S. Yogurt</td><td>Digital Content Management Analyst</td>
+<td class="num">210</td><td>Tier 2 (Scale-up) - non-EU</td>
+<td>not in HubSpot</td></tr><tr><td>2026-06-07</td><td><strong>Henrik Hagemann</strong></td>
+<td>Puraffinity</td><td>Stealth Startup</td><td>Co-Founder</td>
+<td class="num">—</td><td>Unknown</td>
+<td>Customer</td></tr><tr><td>2026-06-06</td><td><strong>Alice Wu</strong></td>
+<td>Peace &amp; Pure</td><td>Aleo Group LLC</td><td>AI Implementation Strategist</td>
+<td class="num">—</td><td>Unknown</td>
+<td>MQL</td></tr><tr><td>2026-05-30</td><td><strong>Alice Dobie</strong></td>
+<td>HelloFresh (The Beehive)</td><td>CreateFuture</td><td>Senior Learning &amp; Development Partner</td>
+<td class="num">500</td><td>Tier 1 (Enterprise)</td>
+<td>Leaver</td></tr><tr><td>2026-05-23</td><td><strong>Sarah-Emily Oades</strong></td>
+<td>SEON</td><td>Eucalyptus</td><td>VP People &amp; Talent</td>
+<td class="num">900</td><td>Tier 1 (Enterprise) - non-EU</td>
+<td>Customer</td></tr><tr><td>2026-05-18</td><td><strong>William Gadsby Peet</strong></td>
+<td>Literal Humans | B Corp</td><td>exceptional™ (formerly Base Creative)</td><td>—</td>
+<td class="num">13</td><td>Below ICP (&lt;20)</td>
+<td>Leaver</td></tr><tr><td>2026-05-15</td><td><strong>Sasha Watson</strong></td>
+<td>Beam</td><td>Zellis</td><td>Chief People Officer</td>
+<td class="num">2500</td><td>Above ICP (&gt;1,500)</td>
+<td>Customer</td></tr></tbody></table>
+
+<h2>Stream B · Coaching users now in senior people roles</h2>
+<p class="sub">415 coaching users changed employer. These 11 landed in a senior people or L&amp;D title, so they are in a position to bring More Happi with them. Full list is in the spreadsheet.</p>
+<table><thead><tr><th>Detected</th><th>Name</th><th>Left</th><th>Joined</th><th>New title</th></tr></thead>
+<tbody><tr><td>2026-08-05</td><td><strong>Manjinder Bains</strong></td>
+<td>HelloFresh (The Beehive)</td><td>Greene King</td><td>People and Culture Lead</td></tr><tr><td>2026-07-24</td><td><strong>Thea Emanuel</strong></td>
+<td>Signature Recruitment</td><td>Heathrow</td><td>Talent Acquisition Manager</td></tr><tr><td>2026-07-12</td><td><strong>Soscha Seymour</strong></td>
+<td>Work.Life</td><td>It&#x27;s Nice That</td><td>Head of Operations &amp; Talent</td></tr><tr><td>2026-07-12</td><td><strong>Soscha Wood</strong></td>
+<td>Work.Life</td><td>It&#x27;s Nice That</td><td>Head of Operations &amp; Talent</td></tr><tr><td>2026-06-29</td><td><strong>Tom Stenning</strong></td>
+<td>VHG Recruitment</td><td>Vita Health Group</td><td>Human Resources Director</td></tr><tr><td>2026-06-29</td><td><strong>Andrea Thorpe</strong></td>
+<td>VHG Recruitment</td><td>Vita Health Group</td><td>Head of People - Talking Therapies</td></tr><tr><td>2026-06-20</td><td><strong>Naomi Saxon</strong></td>
+<td>Light Mind Coaching</td><td>St James Veterinary Group</td><td>Human Resources Manager</td></tr><tr><td>2026-06-06</td><td><strong>James Haq-Myles</strong></td>
+<td>Lucid Group</td><td>ByteDance</td><td>Global Diversity &amp; Inclusion Lead: Organizational Culture</td></tr><tr><td>2026-06-01</td><td><strong>Anna McDaid</strong></td>
+<td>HelloFresh (The Beehive)</td><td>Purple Spheres</td><td>Head of Talent</td></tr><tr><td>2026-05-27</td><td><strong>Shelley Burnand</strong></td>
+<td>WeAreAspire</td><td>Advocate Group</td><td>Lead Talent Partner</td></tr><tr><td>2026-05-15</td><td><strong>Sonali Bhalsod-Patel</strong></td>
+<td>MyTutor.co.uk</td><td>Lendscape</td><td>Senior People Partner</td></tr></tbody></table>
+
+<div class="note"><h3>Read this before acting on any row</h3>
+<ul>
+<li><strong>Detected date is not move date.</strong> Apollo records when it spotted the change. The person may have moved weeks earlier.</li>
+<li><strong>Some matches are wrong.</strong> At least one sponsor appears with an unrelated new role. Check the LinkedIn URL in the spreadsheet before any outreach.</li>
+<li><strong>Deal values are not ACV.</strong> HubSpot amounts on these accounts look like monthly or per-contract figures. Treat them as relative scale only.</li>
+<li><strong>451 of 1,202 movers were excluded</strong> because they have no HubSpot link — Apollo-only prospects, not platform users.</li>
+<li><strong>Three overlapping role properties</strong> exist in HubSpot (platform_user_access_role, platform_account_type, platform_role) and they disagree. This uses the union. Worth consolidating.</li>
+</ul></div>
+
+<footer>More Happi · sources: Apollo contact_job_change_event, HubSpot CRM, Notion ICP &amp; Tiering</footer>
+</div></body></html>
