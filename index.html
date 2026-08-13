@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>More Happi — Reports</title>
+<meta name="description" content="Index of More Happi HTML reports.">
+
+<!-- ============================================================
+     HOW TO ADD A NEW REPORT
+     1. Upload the report's .html file to this repo.
+     2. Copy the <article class="card"> block marked TEMPLATE below,
+        paste it at the top of the list (newest first),
+        and fill in the href, title, date and description.
+     3. Delete nothing else. That's it.
+     ============================================================ -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap');
+
+:root{
+  --mh-cream:#f7efe6;
+  --mh-charcoal:#474645;
+  --mh-pink:#ff9394;
+  --mh-orange-red:#f34100;
+  --mh-green:#00592b;
+  --mh-yellow:#f5c900;
+  --mh-blue:#6d94b4;
+  --mh-font-heading:"Futura PT","Jost",Futura,Arial,sans-serif;
+  --mh-font-body:"Inter","Helvetica Neue",Arial,sans-serif;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--mh-cream);
+  color:var(--mh-charcoal);
+  font-family:var(--mh-font-body);
+  line-height:1.55;
+}
+
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px 72px}
+
+header.top{
+  background:var(--mh-charcoal);
+  color:var(--mh-cream);
+  padding:44px 0 38px;
+  margin-bottom:40px;
+}
+header.top .wrap{padding-bottom:0}
+header.top h1{
+  font-family:var(--mh-font-heading);
+  font-size:2.5rem;
+  letter-spacing:-.5px;
+  margin:0 0 6px;
+  color:var(--mh-cream);
+}
+header.top p{margin:0;opacity:.82;font-size:1.02rem}
+
+h2{
+  font-family:var(--mh-font-heading);
+  font-size:1.35rem;
+  margin:0 0 4px;
+  color:var(--mh-charcoal);
+}
+.section-intro{margin:0 0 20px;opacity:.72;font-size:.95rem;max-width:70ch}
+
+.list{display:flex;flex-direction:column;gap:16px;margin:0 0 44px}
+
+.card{
+  position:relative;
+  background:#fff;
+  border-radius:12px;
+  border-left:6px solid var(--mh-pink);
+  padding:22px 26px;
+  transition:transform .12s ease, box-shadow .12s ease;
+}
+.card:hover,.card:focus-within{
+  transform:translateY(-2px);
+  box-shadow:0 6px 18px rgba(71,70,69,.13);
+}
+.card.current{border-left-color:var(--mh-orange-red)}
+.card.superseded{border-left-color:var(--mh-blue);opacity:.78}
+
+.card h3{
+  font-family:var(--mh-font-heading);
+  font-size:1.32rem;
+  margin:0 0 6px;
+}
+.card h3 a{
+  color:var(--mh-charcoal);
+  text-decoration:none;
+}
+.card h3 a::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:12px;
+}
+.card h3 a:hover{text-decoration:underline}
+.card h3 a:focus-visible{
+  outline:3px solid var(--mh-orange-red);
+  outline-offset:3px;
+}
+
+.meta{
+  font-size:.86rem;
+  opacity:.68;
+  margin:0 0 10px;
+}
+
+.desc{margin:0;font-size:.95rem;max-width:74ch}
+
+.badge{
+  display:inline-block;
+  font-family:var(--mh-font-heading);
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+  padding:4px 10px;
+  border-radius:999px;
+  vertical-align:middle;
+  margin-left:10px;
+  position:relative;
+  top:-2px;
+}
+.badge.current{background:var(--mh-orange-red);color:#fff}
+.badge.superseded{background:var(--mh-cream);color:var(--mh-charcoal);border:1px solid rgba(71,70,69,.3)}
+
+.stats{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:14px 0 0;
+  padding:0;
+  list-style:none;
+}
+.stats li{
+  font-size:.82rem;
+  background:var(--mh-cream);
+  border-radius:8px;
+  padding:6px 12px;
+}
+.stats li b{font-family:var(--mh-font-heading);font-size:.95rem}
+
+footer{
+  border-top:1px solid rgba(71,70,69,.18);
+  padding-top:22px;
+  font-size:.85rem;
+  opacity:.66;
+  max-width:74ch;
+}
+footer p{margin:0 0 8px}
+
+@media (max-width:560px){
+  header.top h1{font-size:1.9rem}
+  .card{padding:18px 20px}
+  .badge{margin-left:0;display:block;width:fit-content;margin-top:8px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <h1>Reports</h1>
+    <p>More Happi</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+
+  <div class="list">
+
+    <!-- ============ NEWEST REPORT AT THE TOP ============ -->
+
+    <article class="card current">
+      <h3><a href="job_move_tracker_2.html">Job move tracker — v2</a><span class="badge current">Current</span></h3>
+      <p class="meta">Apollo detections 15 May – 13 August 2026 · corrected 13 August 2026</p>
+      
+    </article>
+
+    
+
+    <!-- ============ TEMPLATE — copy this block for a new report ============
+    <article class="card current">
+      <h3><a href="FILENAME.html">REPORT TITLE</a><span class="badge current">Current</span></h3>
+      <p class="meta">DATE RANGE · generated DATE</p>
+      <p class="desc">
+        One or two sentences on what the report covers.
+      </p>
+      <ul class="stats">
+        <li><b>00</b> headline figure</li>
+      </ul>
+    </article>
+    ==================================================================== -->
+
+  </div>
+
+  
+
+</div>
+
+</body>
+</html>
